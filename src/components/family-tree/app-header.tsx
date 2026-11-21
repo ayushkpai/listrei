@@ -65,7 +65,7 @@ export function AppHeader({
     <header className="relative z-30 shrink-0 border-b border-line/80 bg-paper/85 backdrop-blur">
       <div className="flex h-16 items-center gap-3 px-4 sm:px-6">
         <div className="flex items-center gap-2.5">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-moss text-paper shadow-sm">
+          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-moss-soft text-moss-deep ring-1 ring-moss/20">
             <TreeMark className="h-5 w-5" />
           </span>
           <div className="leading-none">
@@ -241,7 +241,7 @@ export function AppHeader({
                       setMenu(null);
                       onClear();
                     }}
-                    className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 text-left text-sm text-clay transition hover:bg-clay/5 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent"
+                    className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 text-left text-sm text-clay-deep transition hover:bg-clay/5 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent"
                   >
                     <TrashIcon className="h-4 w-4" />
                     Clear the tree

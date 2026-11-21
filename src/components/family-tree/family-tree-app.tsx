@@ -402,7 +402,7 @@ export default function FamilyTreeApp() {
   if (people === null) {
     return (
       <div className="flex h-dvh flex-col items-center justify-center gap-3 bg-paper">
-        <span className="flex h-11 w-11 animate-pulse items-center justify-center rounded-full bg-moss text-paper">
+        <span className="flex h-11 w-11 animate-pulse items-center justify-center rounded-full bg-moss-soft text-moss-deep ring-1 ring-moss/20">
           <TreeMark className="h-5.5 w-5.5" />
         </span>
         <p className="font-display text-lg text-ink-faint">Listrei</p>
@@ -594,7 +594,7 @@ export default function FamilyTreeApp() {
         <div
           key={toast.id}
           role="status"
-          className="fixed bottom-6 left-1/2 z-[60] -translate-x-1/2 animate-[toast-in_180ms_ease-out] rounded-full bg-ink px-4 py-2.5 text-sm text-paper shadow-xl"
+          className="fixed bottom-6 left-1/2 z-[60] -translate-x-1/2 animate-[toast-in_180ms_ease-out] rounded-full border border-line bg-card px-4 py-2.5 text-sm text-ink shadow-[0_16px_40px_-20px_rgba(74,69,61,0.4)]"
         >
           {toast.message}
         </div>

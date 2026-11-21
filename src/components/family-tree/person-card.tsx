@@ -27,11 +27,11 @@ export function PersonCard({
       aria-pressed={selected}
       className={[
         "group relative flex min-h-[11.5rem] w-[11.5rem] flex-col items-center rounded-2xl border bg-card px-4 pb-4 pt-5 text-center transition-all duration-200",
-        "shadow-[0_1px_0_rgba(43,40,34,0.04),0_10px_24px_-20px_rgba(43,40,34,0.45)]",
+        "shadow-[0_1px_0_rgba(74,69,61,0.03),0_10px_24px_-20px_rgba(74,69,61,0.35)]",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-moss/40 focus-visible:ring-offset-2 focus-visible:ring-offset-paper",
         selected
-          ? "border-moss/50 ring-2 ring-moss/25"
-          : "border-line hover:-translate-y-1 hover:border-line-strong hover:shadow-[0_1px_0_rgba(43,40,34,0.04),0_20px_34px_-22px_rgba(43,40,34,0.5)]",
+          ? "border-moss/50 ring-2 ring-moss/20"
+          : "border-line hover:-translate-y-1 hover:border-line-strong hover:shadow-[0_1px_0_rgba(74,69,61,0.03),0_20px_34px_-24px_rgba(74,69,61,0.4)]",
         dimmed ? "opacity-25 saturate-50" : "opacity-100",
       ].join(" ")}
     >

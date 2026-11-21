@@ -1,18 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --paper: #f6f1e6;
-  --paper-deep: #efe7d6;
-  --card: #fffdf7;
-  --ink: #2b2822;
-  --ink-soft: #6d6558;
-  --ink-faint: #9a9182;
-  --line: #e3dac8;
-  --line-strong: #cabda5;
-  --moss: #3f5d4e;
-  --moss-deep: #2f493c;
-  --clay: #b0603b;
-  --gold: #c9a25a;
+  --paper: #f8f5ee;
+  --paper-deep: #f0ebe2;
+  --card: #fffdfa;
+  --ink: #4a453d;
+  --ink-soft: #7d7568;
+  --ink-faint: #a99f90;
+  --line: #eae3d7;
+  --line-strong: #d7cdbc;
+  --moss: #7c8f7f;
+  --moss-deep: #5f7264;
+  --moss-soft: #e9ede6;
+  --clay: #a87f69;
+  --clay-deep: #8d6553;
+  --gold: #cbb48b;
 }
 
 @theme inline {
@@ -26,7 +28,9 @@
   --color-line-strong: var(--line-strong);
   --color-moss: var(--moss);
   --color-moss-deep: var(--moss-deep);
+  --color-moss-soft: var(--moss-soft);
   --color-clay: var(--clay);
+  --color-clay-deep: var(--clay-deep);
   --color-gold: var(--gold);
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-fraunces), ui-serif, Georgia, "Times New Roman",
@@ -45,15 +49,15 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   background-image:
-    radial-gradient(900px 480px at 8% -10%, rgba(63, 93, 78, 0.08), transparent 60%),
-    radial-gradient(700px 420px at 100% 0%, rgba(176, 96, 59, 0.06), transparent 55%),
-    radial-gradient(rgba(120, 104, 78, 0.06) 1px, transparent 1px);
+    radial-gradient(900px 480px at 8% -10%, rgba(95, 114, 100, 0.06), transparent 60%),
+    radial-gradient(700px 420px at 100% 0%, rgba(168, 127, 105, 0.04), transparent 55%),
+    radial-gradient(rgba(125, 117, 104, 0.05) 1px, transparent 1px);
   background-size: auto, auto, 22px 22px;
   background-attachment: fixed;
 }
 
 ::selection {
-  background: rgba(63, 93, 78, 0.22);
+  background: rgba(124, 143, 127, 0.22);
 }
 
 * {

@@ -20,7 +20,7 @@ export function ConfirmDialog({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       <div
-        className="absolute inset-0 animate-[fade-in_150ms_ease-out] bg-ink/40 backdrop-blur-[2px]"
+        className="absolute inset-0 animate-[fade-in_150ms_ease-out] bg-ink/25 backdrop-blur-[2px]"
         onClick={onClose}
         aria-hidden="true"
       />
@@ -30,7 +30,7 @@ export function ConfirmDialog({
         aria-label={title}
         className="relative w-full max-w-sm animate-[modal-in_180ms_ease-out] rounded-3xl border border-line bg-card p-6 shadow-2xl"
       >
-        <span className="flex h-11 w-11 items-center justify-center rounded-full bg-clay/10 text-clay">
+        <span className="flex h-11 w-11 items-center justify-center rounded-full bg-clay/10 text-clay-deep">
           <TrashIcon className="h-5 w-5" />
         </span>
         <h2 className="mt-4 font-display text-2xl leading-tight text-ink">
@@ -50,7 +50,7 @@ export function ConfirmDialog({
           <button
             type="button"
             onClick={onConfirm}
-            className="rounded-full bg-clay px-4 py-2 text-sm font-medium text-white transition hover:bg-clay/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay/40 focus-visible:ring-offset-2"
+            className="rounded-full bg-clay-deep px-4 py-2 text-sm font-medium text-paper transition hover:bg-clay-deep/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay/40 focus-visible:ring-offset-2"
           >
             {confirmLabel}
           </button>

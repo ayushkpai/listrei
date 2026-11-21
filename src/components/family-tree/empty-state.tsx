@@ -20,12 +20,12 @@ export function EmptyState({ onAdd }: EmptyStateProps) {
           <span className="absolute inset-0 rounded-full border border-line" />
           <span className="absolute inset-3 rounded-full border border-line/70" />
           <span className="absolute inset-6 rounded-full border border-line/50" />
-          <span className="relative flex h-14 w-14 items-center justify-center rounded-full bg-moss text-paper shadow-lg shadow-moss/20">
+          <span className="relative flex h-14 w-14 items-center justify-center rounded-full bg-moss-soft text-moss-deep shadow-[0_12px_30px_-16px_rgba(95,114,100,0.45)] ring-1 ring-moss/20">
             <TreeMark className="h-7 w-7" />
           </span>
         </div>
 
-        <p className="text-[10px] uppercase tracking-[0.3em] text-clay">
+        <p className="text-[10px] uppercase tracking-[0.3em] text-clay-deep">
           A blank page, for now
         </p>
         <h1 className="mt-3 font-display text-4xl leading-[1.1] text-ink sm:text-5xl">
@@ -39,7 +39,7 @@ export function EmptyState({ onAdd }: EmptyStateProps) {
         <button
           type="button"
           onClick={onAdd}
-          className="mt-8 inline-flex h-12 items-center gap-2 rounded-full bg-moss px-6 text-sm font-medium text-paper shadow-lg shadow-moss/20 transition hover:bg-moss-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-moss/40 focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
+          className="mt-8 inline-flex h-12 items-center gap-2 rounded-full bg-moss px-6 text-sm font-medium text-paper shadow-md shadow-moss/15 transition hover:bg-moss-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-moss/40 focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
         >
           <PlusIcon className="h-4 w-4" />
           Add the first person

@@ -59,7 +59,7 @@ export function PersonForm({
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center sm:items-center sm:p-6">
       <div
-        className="absolute inset-0 animate-[fade-in_150ms_ease-out] bg-ink/40 backdrop-blur-[2px]"
+        className="absolute inset-0 animate-[fade-in_150ms_ease-out] bg-ink/25 backdrop-blur-[2px]"
         onClick={onClose}
         aria-hidden="true"
       />
@@ -72,7 +72,7 @@ export function PersonForm({
       >
         <div className="flex items-start justify-between gap-4 px-6 pb-2 pt-6">
           <div>
-            <p className="text-[10px] uppercase tracking-[0.24em] text-clay">
+            <p className="text-[10px] uppercase tracking-[0.24em] text-clay-deep">
               {subtitle}
             </p>
             <h2 className="mt-1 font-display text-2xl leading-tight text-ink">
@@ -104,7 +104,7 @@ export function PersonForm({
               className={fieldClass}
             />
             {error ? (
-              <p className="mt-1.5 text-xs text-clay">{error}</p>
+              <p className="mt-1.5 text-xs text-clay-deep">{error}</p>
             ) : null}
           </div>
 

@@ -55,7 +55,7 @@ export function PersonPanel({
   return (
     <>
       <div
-        className="fixed inset-0 z-30 animate-[fade-in_200ms_ease-out] bg-ink/25 backdrop-blur-[2px]"
+        className="fixed inset-0 z-30 animate-[fade-in_200ms_ease-out] bg-ink/20 backdrop-blur-[2px]"
         onClick={onClose}
         aria-hidden="true"
       />
@@ -63,21 +63,21 @@ export function PersonPanel({
         role="dialog"
         aria-modal="true"
         aria-label={`${person.name} — family details`}
-        className="fixed inset-y-0 right-0 z-40 flex w-full flex-col bg-card shadow-[-24px_0_60px_-30px_rgba(43,40,34,0.45)] animate-[panel-in_240ms_cubic-bezier(0.22,1,0.36,1)] sm:max-w-[27rem]"
+        className="fixed inset-y-0 right-0 z-40 flex w-full flex-col bg-card shadow-[-24px_0_60px_-34px_rgba(74,69,61,0.3)] animate-[panel-in_240ms_cubic-bezier(0.22,1,0.36,1)] sm:max-w-[27rem]"
       >
-        <div className="relative overflow-hidden bg-moss px-6 pb-14 pt-5 text-paper">
-          <span className="pointer-events-none absolute -right-14 -top-16 h-52 w-52 rounded-full border border-paper/10" />
-          <span className="pointer-events-none absolute -right-6 top-2 h-32 w-32 rounded-full border border-paper/10" />
-          <span className="pointer-events-none absolute right-16 -top-8 h-20 w-20 rounded-full border border-paper/10" />
+        <div className="relative overflow-hidden bg-gradient-to-br from-moss-soft to-[#e1e8dd] px-6 pb-14 pt-5 text-ink">
+          <span className="pointer-events-none absolute -right-14 -top-16 h-52 w-52 rounded-full border border-moss/15" />
+          <span className="pointer-events-none absolute -right-6 top-2 h-32 w-32 rounded-full border border-moss/15" />
+          <span className="pointer-events-none absolute right-16 -top-8 h-20 w-20 rounded-full border border-moss/10" />
           <div className="relative flex items-start justify-between gap-4">
             <div className="min-w-0">
-              <p className="text-[10px] uppercase tracking-[0.28em] text-paper/55">
+              <p className="text-[10px] uppercase tracking-[0.28em] text-clay">
                 Family member
               </p>
-              <h2 className="mt-1 break-words font-display text-[1.75rem] leading-tight">
+              <h2 className="mt-1 break-words font-display text-[1.75rem] leading-tight text-ink">
                 {person.name}
               </h2>
-              <p className="mt-1.5 text-sm text-paper/70">
+              <p className="mt-1.5 text-sm text-ink-soft">
                 {meta || "Dates unknown"}
               </p>
             </div>
@@ -85,7 +85,7 @@ export function PersonPanel({
               type="button"
               onClick={onClose}
               aria-label="Close details"
-              className="-mr-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-paper/75 transition hover:bg-paper/10 hover:text-paper"
+              className="-mr-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-ink-soft transition hover:bg-card/70 hover:text-ink"
             >
               <XIcon className="h-5 w-5" />
             </button>
@@ -186,7 +186,7 @@ export function PersonPanel({
             <button
               type="button"
               onClick={() => setConfirmingDelete(true)}
-              className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-2 text-xs font-medium text-clay transition hover:bg-clay/5"
+              className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-2 text-xs font-medium text-clay-deep transition hover:bg-clay/5"
             >
               <TrashIcon className="h-3.5 w-3.5" />
               Remove
@@ -206,7 +206,7 @@ export function PersonPanel({
                 <button
                   type="button"
                   onClick={() => onDelete(person.id)}
-                  className="rounded-full bg-clay px-3.5 py-1.5 text-xs font-medium text-white transition hover:bg-clay/90"
+                  className="rounded-full bg-clay-deep px-3.5 py-1.5 text-xs font-medium text-paper transition hover:bg-clay-deep/90"
                 >
                   Remove
                 </button>
